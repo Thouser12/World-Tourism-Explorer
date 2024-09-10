@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #DBCFB0, #726E60);
+}
+
+/* General header styling for row layout */
+header {
+    display: flex;
+    flex-direction: row; /* Changed to row layout */
+    justify-content: space-between; /* Space between logo, title, and navigation */
+    align-items: center; /* Align items vertically in the center */
+    background-color: #DBCFB0;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo and title styling */
+header .logo img {
+    width: 60px; /* Adjust size based on your logo */
+    height: auto;
+    margin-right: 20px; /* Space between logo and title */
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #F74E3B;
+    margin: 0 20px; /* Space between title and navigation */
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    color: #726E60;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F87060;
+}
+
+/* Search bar styling */
+.search-bar {
+    margin-left: 20px;
+    display: flex;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #F87060;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.search-bar button {
+    background-color: #F74E3B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #F87060;
+}
+
+/* Language selector styling */
+.language-selector {
+    margin-left: 20px;
+}
+
+.language-selector select {
+    padding: 10px;
+    border: 2px solid #F87060;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #DBCFB0;
+    color: #726E60;
+    cursor: pointer;
+}
+
+/* Call-to-action button styling */
+.cta-button {
+    background-color: #F74E3B;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #F87060;
+}
+
+
+main{
+    margin-top: 10px;
+}
+
+.content_continents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+}
+
+.title_highlight {
+    color: #F74E3B;
+}
+
+.content_continents_title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    color: black;
+}
+
+.content_continents_presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content_continents_presentation > div {
+    flex: 0 0 28%;
+    max-width: 28%;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Apply hover only on the image */
+.continent_img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, #F87060, #F74E3B);
+    color: aliceblue;
+    transition: transform 0.3s ease;
+}
+
+/* Hover on the image triggers both the image and title scale */
+.continent_img:hover {
+    transform: scale(1.1);
+}
+
+.continent_img:hover + .continent_title {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.continent_title {
+    margin-top: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: xx-large;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .content_continents_presentation > div {
+        flex: 0 0 45%;
+        max-width: 45%;
+        margin: 15px;
+    }
+
+    .continent_img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content_continents_presentation > div {
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .continent_img {
+        max-width: 200px;
+    }
+}

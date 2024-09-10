@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Tourism Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/favicon.png" alt="World Tourism Explorer">
+        </div>
+        <h1>World <strong class="logo_highlight">Tourism</strong> Explorer</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#continents">Continents</a></li>
+                <li><a href="#search">Search by Country</a></li>
+                <li><a href="#popular">Popular Destinations</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a country..." aria-label="Search">
+            <button>Search</button>
+        </div>
+        
+        <div class="language-selector">
+            <select>
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
+    
+        <button class="cta-button">Plan Your Trip</button>
+    </header>
+    
+    <main class="content">
+        <section class="content_continents">
+            <h1 class="content_continents_title">Choose your <strong class="title_highlight">continent</strong> to begin!</h1>
+            <div class="content_continents_presentation">
+                <div class="content_continents_presentation_southAmerica">
+                    <img class="continent_img" src="img/continents/southAmerica.png" alt="South America map">
+                    <h3 class="continent_title">South America</h3>
+                </div>
+                <div class="content_continents_presentation_northAmerica">
+                    <img class="continent_img" src="img/continents/northAmerica.png" alt="North America map">
+                    <h3 class="continent_title">North America</h3>
+                </div>
+                <div class="content_continents_presentation_europe">
+                    <img class="continent_img" src="img/continents/europe.png" alt="Europe map">
+                    <h3 class="continent_title">Europe</h3>
+                </div>
+                <div class="content_continents_presentation_africa">
+                    <img class="continent_img" src="img/continents/africa.png" alt="Africa map">
+                    <h3 class="continent_title">Africa</h3>
+                </div>
+                <div class="content_continents_presentation_asia">
+                    <img class="continent_img" src="img/continents/asia.png" alt="Asia map">
+                    <h3 class="continent_title">Asia</h3>
+                </div>
+                <div class="content_continents_presentation_oceania">
+                    <img class="continent_img" src="img/continents/oceania.png" alt="Oceania map">
+                    <h3 class="continent_title">Oceania</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
